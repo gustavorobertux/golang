@@ -22,6 +22,7 @@ func main() {
 		_, err := net.DialTimeout("tcp", TARGET, 600*time.Millisecond)
 
 		if err != nil {
+		// comment the line below if you want to see only the open ports
 			fmt.Printf("Port %d is closed\n", PORT)
 		} else {
 			fmt.Printf("Port %d is open\n", PORT)
